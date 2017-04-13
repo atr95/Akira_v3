@@ -1,0 +1,81 @@
+How to make a room:
+
+Notify Alex that you're about to make a room.
+
+Step 1:
+	Go to the Rooms section of the editor (the folder below Objects).
+	Duplicate rm_base (right click it, select duplicate).
+	rename the room as "rm_(room_number)" for example, rm_2, rm_3, etc.
+
+
+		rm_base is a basic version of a room that contains all the creation code that rooms need.
+		By duplicating it, this ensures that the new room contains that creation code and is built at the correct resolution.
+
+		All rooms can only be 360 pixels high. No exceptions.
+		However, they can be as wide as you want. The default width is 640.  640x360 = 16x9 screen resolution.
+		If you want a room wider than 640, change the width of the room to the value you want from the room edit screen.
+		I suggest using widths that are in intervals of 320. that is, 640, 960, 1280, 1600, 1920, and so on.
+
+		When you change the width of your duplicated room to a value larger than 640, 
+		you'll notice that the black bars in the image
+		no longer line up correctly to the with of the room.
+		Select the tile tab and this will allow you to interact with the black bars.
+		Move the leftmost side bar to the new end of the room.
+		Then you need to deal with the bottom and top bars. They can't simply be dragged over though.
+		In the tile tab is a large square. Below that is a textbox that says Undefined by default. click that.
+		Select the folder "bg_tile_black_bars"
+		Inside that is the tile set for the top and bottom black bars.
+		Select which you need and then select the image in the square above this text box.
+		You can now place the black bar where you need it in the room.
+		All rooms need these black bars for consistency. 
+		
+		If you need a room smaller than the default, the process is different.
+		Instead of change the width of the room to a smaller value than 640,
+		simply add more black bars to the sides of the screen.
+		Then, once finished, go to settings tab and click Creation Code.
+		In this code page, change the value of 
+		"global.border" to 104 + how ever thick the new border is.
+		For example, if you add 1 additional side bar to the screen,
+		the new value would be 104 + 64 since a side bar is 64 pixels wide.
+		"global.border = 104 + 64" is an accepted statement so no need to do math.
+
+Step 2:
+	2.1
+	You need Doors for your room.
+	goto Objects, look for obj_interact, then inside that obj_group_doors
+	Duplicate obj_door_0. rename your new door as obj_door_(door number)
+	Open your new obj_door.
+	Click on the create event code.
+	change the statement on line 4 to have the name of your room.
+	Open the code for alarm_1.
+	Change line 2 to have the number in the array that matches your door.
+	change line 5 and 11 for the current room.
+	change line 7 and 9 for where the door goes.
+	2.2
+	Goto Scripts. Inside of scr_group_room_start open scr_spawn_interior.
+	create a case for your room.
+	write where in the room your door needs to be spawned.
+		"instance_create( x value, 288, obj_door_(door_number));"
+	if your room has any items, follow similar steps.
+	if your room has enemies, go to scr_spawn_enemy
+	2.3
+	Goto scr_spawn_player.
+	create a case for your room.
+	create an if statement for your doors index in the array.
+	create a statement setting your doors index to false.
+	create a statement for spawning your player where your door is.
+
+Step 3:
+	decorate your room!
+	open your room up, go to tiles. Select the tiles you wish to use.
+	start placing tiles where you want them in the room.
+	Then I think you're done!
+	
+Step 4:
+
+	commit your room to the github.
+	Tell Alex that you did so.
+
+			
+		
+	

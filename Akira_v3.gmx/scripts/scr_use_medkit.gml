@@ -1,0 +1,29 @@
+if(global.medkit_count>0)
+{
+    if(global.player_health<6)
+    {
+        global.medkit_count-=1;
+        global.player_health=6;
+        with(obj_display)
+        {
+            global.message_display=12;
+            alarm[0]=1;
+        } 
+    }
+    else
+    {
+       with(obj_display)
+    {
+        global.message_display=7;
+        alarm[0]=1;
+    } 
+    }
+}
+else
+{
+    with(obj_display)
+    {
+        global.message_display=4;
+        alarm[0]=1;
+    }
+}

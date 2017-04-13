@@ -1,0 +1,24 @@
+if(global.ammo_count>0)
+{
+    if(global.weapon_ammo<6)
+    {
+        global.ammo_count--;
+        global.weapon_ammo++;
+    }
+    else
+    {
+        with(obj_display)
+        {
+            global.message_display=8;
+            alarm[0]=1;
+        }
+    }
+}
+else
+{
+    with(obj_display)
+    {
+        global.message_display=3;
+        alarm[0]=1;
+    }
+}
