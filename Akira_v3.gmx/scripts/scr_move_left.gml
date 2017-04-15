@@ -19,7 +19,7 @@ if(x>global.border)
     x-=move_speed;
     with(obj_player_arms)
     {
-    image_index=2;
+    image_index=4;
     x-=obj_player.move_speed;
     }
 }
@@ -40,13 +40,13 @@ else if(max(keyboard_check_released(vk_shift),0))
     state=0;
     with(obj_player_arms)
     {
-        if(image_index==2)
+        if(image_index==0)
         {
-            image_index=3;
+            image_index=2;
         }
-        else if(image_index==0)
+        else if(image_index==4)
         {
-            image_index=1;
+            image_index=6;
         }
     }
 }
