@@ -161,7 +161,7 @@ if(global.pause==0)
                 //R? to reload
                 else if(max(keyboard_check_released(ord("R")),0))
                 {
-                    //scr_reload();
+                    scr_reload();
                 }
             }
             else
@@ -245,7 +245,7 @@ if(global.pause==0)
                 //R? to reload
                 else if(max(keyboard_check_released(ord("R")),0))
                 {
-                    //scr_reload();
+                    scr_reload();
                 }
             }
             break;

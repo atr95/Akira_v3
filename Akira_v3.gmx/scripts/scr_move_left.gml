@@ -34,6 +34,11 @@ else if(max(keyboard_check_released(ord("W")),keyboard_check_released(vk_up),key
     image_index=2;
     state=4;
 }
+
+if(max(keyboard_check_released(ord("R")),0))
+            {
+                scr_reload();
+            }
 else if(max(keyboard_check_released(vk_shift),0))
 {
     weapon_drawn=true;

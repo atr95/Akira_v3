@@ -80,6 +80,10 @@ if(i==walk_frame)
             {
                 scr_fire_weapon();
             }
+            else if(max(keyboard_check_released(ord("R")),0))
+            {
+                scr_reload();
+            }
             else if(max(keyboard_check_released(vk_shift),0))
             {
                 //holster your weapon

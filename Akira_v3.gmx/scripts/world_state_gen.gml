@@ -4,8 +4,8 @@
 global.player_health=6;
 
 //ammo
-global.ammo_count=6;
-//global.weapon_ammo=6;
+global.ammo_count=56;
+global.weapon_ammo=8;
 
 //medkits
 global.medkit_count=1;

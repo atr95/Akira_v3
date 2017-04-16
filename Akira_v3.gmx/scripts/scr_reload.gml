@@ -1,9 +1,9 @@
 if(global.ammo_count>0)
 {
-    if(global.weapon_ammo<6)
+    if(global.weapon_ammo<8)
     {
-        global.ammo_count--;
-        global.weapon_ammo++;
+        global.ammo_count-=(8-global.weapon_ammo);
+        global.weapon_ammo=8;
     }
     else
     {

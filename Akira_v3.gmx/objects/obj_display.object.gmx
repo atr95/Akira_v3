@@ -139,58 +139,7 @@ view_yview[0]+24,
 false);
 
 draw_text(view_xview[0]+256,view_yview[0]+16,"Medkits: " + string(global.medkit_count));
-draw_text(view_xview[0]+384,view_yview[0]+16,"Ammo: " + string(global.ammo_count));
-/*
-if(global.demo_map)
-{
-    draw_rectangle(view_xview[0]+480,view_yview[0]+8,view_xview[0]+624,view_yview[0]+56,true);
-}
-*/
-/*
-//ammo in weapon?
-switch(global.weapon_ammo)
-{
-    case 0:
-    {
-        draw_sprite(spr_weapon_ammo,0,view_xview[0]+544,view_yview[0]+20);
-        break;
-    }
-    case 1:
-    {
-        draw_sprite(spr_weapon_ammo,1,view_xview[0]+544,view_yview[0]+20);
-         break;
-    }
-    case 2:
-    {
-        draw_sprite(spr_weapon_ammo,2,view_xview[0]+544,view_yview[0]+20);
-         break;
-    }
-    case 3:
-    {
-        draw_sprite(spr_weapon_ammo,3,view_xview[0]+544,view_yview[0]+20);
-         break;
-    }
-    case 4:
-    {
-        draw_sprite(spr_weapon_ammo,4,view_xview[0]+544,view_yview[0]+20);
-         break;
-    }
-    case 5:
-    {
-        draw_sprite(spr_weapon_ammo,5,view_xview[0]+544,view_yview[0]+20);
-         break;
-    }
-    case 6:
-    {
-        draw_sprite(spr_weapon_ammo,6,view_xview[0]+544,view_yview[0]+20);
-         break;
-    }
-    default:
-    {
-         break;
-    }
-}
-*/
+draw_text(view_xview[0]+384,view_yview[0]+16,"Ammo: " + string(global.weapon_ammo) + "/" + string(global.ammo_count));
 </string>
           </argument>
         </arguments>

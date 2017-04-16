@@ -167,6 +167,7 @@
       <object>objects\obj_light</object>
       <object>objects\obj_fade</object>
       <object>objects\obj_pause</object>
+      <object>objects\obj_map</object>
     </objects>
   </objects>
   <rooms name="rooms">
