@@ -134,7 +134,7 @@ true);
 
 draw_rectangle(view_xview[0]+96,
 view_yview[0]+8,
-view_xview[0]+96+128*(global.player_health/6),
+view_xview[0]+96+128*(global.player_health/7),
 view_yview[0]+24,
 false);
 
