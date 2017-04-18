@@ -84,6 +84,14 @@ else if(x&gt;room_width-global.border)
 {
     instance_destroy();
 }
+else if(x&gt;obj_player.x+560)
+{
+    instance_destroy();
+}
+else if(x&lt;obj_player.x-560)
+{
+    instance_destroy();
+}
 else if(y&lt;70)
 {
     instance_destroy();

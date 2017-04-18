@@ -1,9 +1,9 @@
 if(global.medkit_count>0)
 {
-    if(global.player_health<6)
+    if(global.player_health<7)
     {
         global.medkit_count-=1;
-        global.player_health=6;
+        global.player_health=7;
         with(obj_display)
         {
             global.message_display=12;

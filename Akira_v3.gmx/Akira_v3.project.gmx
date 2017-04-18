@@ -23,13 +23,18 @@
       <sprite>sprites\spr_main_menu</sprite>
     </sprites>
     <sprites name="spr_group_interact">
-      <sprite>sprites\spr_ammo</sprite>
+      <sprite>sprites\spr_ammo1</sprite>
+      <sprite>sprites\spr_ammo2</sprite>
+      <sprite>sprites\spr_ammo3</sprite>
       <sprite>sprites\spr_key_0</sprite>
       <sprite>sprites\spr_key_1</sprite>
       <sprite>sprites\spr_key_2</sprite>
       <sprite>sprites\spr_medkit</sprite>
       <sprite>sprites\spr_door_far</sprite>
       <sprite>sprites\spr_door_near</sprite>
+      <sprite>sprites\spr_health</sprite>
+      <sprite>sprites\spr_med_hud</sprite>
+      <sprite>sprites\spr_ammo_hud</sprite>
     </sprites>
     <sprites name="spr_group_player">
       <sprite>sprites\spr_player_arms</sprite>
@@ -113,6 +118,10 @@
         <object>objects\obj_door_jammed_far</object>
         <objects name="obj_group_test_doors">
           <object>objects\obj_door_0</object>
+          <object>objects\obj_door_1</object>
+          <object>objects\obj_door_2</object>
+          <object>objects\obj_door_3</object>
+          <object>objects\obj_door_4</object>
         </objects>
       </objects>
       <objects name="obj_group_interact_parents">
@@ -132,6 +141,7 @@
         <object>objects\obj_ammo_0</object>
         <object>objects\obj_ammo_1</object>
         <object>objects\obj_ammo_2</object>
+        <object>objects\obj_ammo_3</object>
       </objects>
       <objects name="obj_group_medkits">
         <object>objects\obj_medkit_0</object>
@@ -179,6 +189,13 @@
       <room>rooms\rm_test_1</room>
     </rooms>
     <room>rooms\rm_base</room>
+    <rooms name="rm_group_playtest">
+      <room>rooms\rm_playtest_0</room>
+      <room>rooms\rm_playtest_1</room>
+      <room>rooms\rm_playtest_2</room>
+      <room>rooms\rm_playtest_3</room>
+      <room>rooms\rm_playtest_4</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

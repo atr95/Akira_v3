@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.array_ammo[0]=true;
-global.ammo_count+=3;
+            <string>global.array_ammo[3]=true;
+global.ammo_count+=global.max_ammo*3;
 with(obj_display)
 {
     global.message_display=6;

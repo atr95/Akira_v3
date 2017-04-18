@@ -1,9 +1,24 @@
 if(global.ammo_count>0)
 {
-    if(global.weapon_ammo<8)
+    if(global.weapon_ammo<global.max_ammo)
     {
-        global.ammo_count-=(8-global.weapon_ammo);
-        global.weapon_ammo=8;
+        ammo=global.max_ammo-global.weapon_ammo;
+        while(i<global.max_ammo)
+        {
+            if(global.ammo_count>=ammo)
+            {
+                global.ammo_count-=ammo;
+                global.weapon_ammo+=ammo;
+                i+=global.max_ammo;
+            }
+            else
+            {
+            ammo--;
+            i++;
+            }
+        }
+        
+        
     }
     else
     {

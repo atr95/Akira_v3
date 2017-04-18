@@ -40,7 +40,8 @@ display[8]="My weapon is fully loaded.";
 display[9]="Is this the end?...";
 display[10]="This door won't budge.";
 display[11]="I found a map to this area.";
-display[12]="I used a medkit";
+display[12]="I used a medkit.";
+display[13]="I unlocked the door.";
 </string>
           </argument>
         </arguments>
@@ -120,10 +121,60 @@ draw_set_valign(fa_middle);
 draw_set_font(font);
 draw_set_color(c_white);
 //this draws the specified message
-draw_text(view_xview[0]+16,view_yview[0]+48,display[global.message_display]);
+draw_text(view_xview[0]+64,view_yview[0]+48,display[global.message_display]);
 }
 draw_set_color(c_white);
 
+switch(global.player_health)
+{
+    case 0:
+    {
+    draw_sprite(spr_health,0,view_xview[0]+32,view_yview[0]+32);
+    break;
+    }
+    case 1:
+    {
+    draw_sprite(spr_health,1,view_xview[0]+32,view_yview[0]+32);
+    break;
+    }
+    case 2:
+    {
+    draw_sprite(spr_health,2,view_xview[0]+32,view_yview[0]+32);
+    break;
+    }
+    case 3:
+    {
+    draw_sprite(spr_health,3,view_xview[0]+32,view_yview[0]+32);
+    break;
+    }
+    case 4:
+    {
+    draw_sprite(spr_health,4,view_xview[0]+32,view_yview[0]+32);
+    break;
+    }
+    case 5:
+    {
+    draw_sprite(spr_health,5,view_xview[0]+32,view_yview[0]+32);
+    break;
+    }
+    case 6:
+    {
+    draw_sprite(spr_health,6,view_xview[0]+32,view_yview[0]+32);
+    break;
+    }
+    case 7:
+    {
+    draw_sprite(spr_health,7,view_xview[0]+32,view_yview[0]+32);
+    break;
+    }
+    default:
+    {
+    break;
+    }  
+}
+
+
+/*
 draw_text(view_xview[0]+16,view_yview[0]+16,"Health:");
 
 draw_rectangle(view_xview[0]+96,
@@ -137,9 +188,11 @@ view_yview[0]+8,
 view_xview[0]+96+128*(global.player_health/7),
 view_yview[0]+24,
 false);
-
-draw_text(view_xview[0]+256,view_yview[0]+16,"Medkits: " + string(global.medkit_count));
-draw_text(view_xview[0]+384,view_yview[0]+16,"Ammo: " + string(global.weapon_ammo) + "/" + string(global.ammo_count));
+*/
+draw_sprite(spr_med_hud,0,view_xview[0]+96,view_yview[0]+16);
+draw_text(view_xview[0]+102,view_yview[0]+16," x" + string(global.medkit_count));
+draw_sprite(spr_ammo_hud,0,view_xview[0]+160,view_yview[0]+16);
+draw_text(view_xview[0]+176,view_yview[0]+16, + string(global.weapon_ammo) + "/" + string(global.ammo_count));
 </string>
           </argument>
         </arguments>

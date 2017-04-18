@@ -25,6 +25,71 @@ switch(room)
         }
         break;
     }
+    case(rm_playtest_0):
+    {
+        if(global.game_start)
+        {
+            global.game_start=false;
+            instance_create(128,288,obj_player);
+        }
+        else if(global.array_doors[1])
+        {
+            global.array_doors[1]=false;
+            instance_create(768,288,obj_player);
+        }
+        else if(global.array_doors[2])
+        {
+            global.array_doors[2]=false;
+            instance_create(384,288,obj_player);
+        }
+        break;
+    }
+    case(rm_playtest_1):
+    {
+        if(global.array_doors[1])
+        {
+            global.array_doors[1]=false;
+            instance_create(480,288,obj_player);
+        }
+        break;
+    }
+    case(rm_playtest_2):
+    {
+        if(global.array_doors[2])
+        {
+            global.array_doors[2]=false;
+            instance_create(384,288,obj_player);
+        }
+        else if(global.array_doors[3])
+        {
+            global.array_doors[3]=false;
+            instance_create(192,288,obj_player);
+        }
+        if(global.array_doors[4])
+        {
+            global.array_doors[4]=false;
+            instance_create(1120,288,obj_player);
+        }
+        break;
+    }
+    case(rm_playtest_3):
+    {
+        if(global.array_doors[3])
+        {
+            global.array_doors[3]=false;
+            instance_create(448,288,obj_player);
+        }
+        break;
+    }
+    case(rm_playtest_4):
+    {
+        if(global.array_doors[4])
+        {
+            global.array_doors[4]=false;
+            instance_create(512,288,obj_player);
+        }
+        break;
+    }
     default:
     {
         break;

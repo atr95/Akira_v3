@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>state=0;
 move_speed=4;
+ammo=0;
 size=384;
 image_speed=0;
 image_index=global.player_default;
@@ -57,7 +58,7 @@ instance_create(x,y-102,obj_player_arms);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>game_end();
+            <string>game_restart();
 </string>
           </argument>
         </arguments>
@@ -83,7 +84,7 @@ instance_create(x,y-102,obj_player_arms);
             <string>
 draw_set_blend_mode(bm_subtract);
 surface_set_target(global.light);
-draw_ellipse_color(x-size/2 - view_xview[0],y-size/2 - view_yview[0],x+size/2 - view_xview[0], y+size/2 - view_yview[0],c_white,c_black,false);
+draw_ellipse_color((x-size/2 - view_xview[0]),(y-64-size/2 - view_yview[0]),x+size/2 - view_xview[0], y-64+size/2 - view_yview[0],c_white,c_black,false);
 surface_reset_target();
 draw_set_blend_mode(bm_normal);
 </string>
