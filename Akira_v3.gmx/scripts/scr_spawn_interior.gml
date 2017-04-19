@@ -16,7 +16,7 @@ switch(room)
     }
     case(rm_playtest_0):
     {
-        instance_create(128,288,obj_door_jammed_far);
+        instance_create(192,288,obj_door_jammed_far);
         instance_create(768,288,obj_door_1);
         instance_create(384,288,obj_door_2);
         break;
@@ -26,7 +26,7 @@ switch(room)
         instance_create(480,288,obj_door_1);
         if(global.array_keys[0]==false)
         {
-            instance_create(96,288,obj_key_0);
+            instance_create(192,288,obj_key_0);
         }
         break;
     }
@@ -40,7 +40,7 @@ switch(room)
     }
     case(rm_playtest_3):
     {
-        instance_create(448,288,obj_door_3);
+        instance_create(384,288,obj_door_3);
         if(global.array_ammo[3]==false)
         {
         instance_create(256,288,obj_ammo_3);
@@ -53,8 +53,8 @@ switch(room)
     }
     case(rm_playtest_4):
     {
-        instance_create(512,288,obj_door_4);
-        instance_create(96,288,obj_ladder);
+        instance_create(448,288,obj_door_4);
+        instance_create(160,288,obj_ladder);
         break;
     }
     default:

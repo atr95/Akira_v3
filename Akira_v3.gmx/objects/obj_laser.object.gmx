@@ -96,7 +96,7 @@ else if(y&lt;70)
 {
     instance_destroy();
 }
-else if(y&gt;room_height-56)
+else if(y&gt;room_height-88)
 {
     instance_destroy();
 }

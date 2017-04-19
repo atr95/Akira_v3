@@ -25,17 +25,17 @@ switch(room)
         if(global.array_enemy[0])
         {
            //spawn enemy 0
-           instance_create(736,288,obj_enemy_test_0);
+           instance_create(1056,288,obj_enemy_test_0);
         }
         if(global.array_enemy[1])
         {
             //spawn enemy 1
-            instance_create(832,288,obj_enemy_test_1);
+            instance_create(1088,288,obj_enemy_test_1);
         }
         if(global.array_enemy[2])
         {
             //spawn enemy 2
-            instance_create(960,288,obj_enemy_test_2);
+            instance_create(1152,288,obj_enemy_test_2);
         }
     }
     default:

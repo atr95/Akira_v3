@@ -30,7 +30,7 @@ switch(room)
         if(global.game_start)
         {
             global.game_start=false;
-            instance_create(128,288,obj_player);
+            instance_create(192,288,obj_player);
         }
         else if(global.array_doors[1])
         {
@@ -77,7 +77,7 @@ switch(room)
         if(global.array_doors[3])
         {
             global.array_doors[3]=false;
-            instance_create(448,288,obj_player);
+            instance_create(384,288,obj_player);
         }
         break;
     }
@@ -86,7 +86,7 @@ switch(room)
         if(global.array_doors[4])
         {
             global.array_doors[4]=false;
-            instance_create(512,288,obj_player);
+            instance_create(448,288,obj_player);
         }
         break;
     }

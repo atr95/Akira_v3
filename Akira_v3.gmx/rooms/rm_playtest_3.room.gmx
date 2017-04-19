@@ -8,7 +8,7 @@
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
-  <colour>16777215</colour>
+  <colour>0</colour>
   <showcolour>-1</showcolour>
   <code>//spawn objects we need
 scr_check_persist();
@@ -64,6 +64,12 @@ global.border=168;</code>
     <tile bgName="bg_tile_top_bar" x="0" y="0" w="640" h="64" xo="0" yo="0" id="10000035" name="inst_3A8B3CE1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_tile_side_bar" x="64" y="64" w="64" h="256" xo="0" yo="0" id="10000831" name="inst_A4E76B60" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_tile_side_bar" x="512" y="64" w="64" h="256" xo="0" yo="0" id="10000832" name="inst_82E63379" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_tile_side" x="448" y="64" w="64" h="256" xo="0" yo="0" id="10000867" name="inst_7AA75736" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_tile_side" x="128" y="64" w="64" h="256" xo="0" yo="256" id="10000868" name="inst_076132E8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="192" y="64" w="64" h="256" xo="0" yo="256" id="10000869" name="inst_B592700C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="256" y="64" w="64" h="256" xo="64" yo="256" id="10000870" name="inst_A14C3CD4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="320" y="64" w="64" h="256" xo="128" yo="256" id="10000871" name="inst_049D457F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="384" y="64" w="64" h="256" xo="192" yo="256" id="10000872" name="inst_13F6E4BF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

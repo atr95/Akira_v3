@@ -8,7 +8,7 @@
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
-  <colour>16777215</colour>
+  <colour>0</colour>
   <showcolour>-1</showcolour>
   <code>//spawn objects we need
 scr_check_persist();
@@ -62,6 +62,14 @@ global.border=104;</code>
     <tile bgName="bg_tile_side_bar" x="0" y="64" w="64" h="256" xo="0" yo="0" id="10000033" name="inst_26AAD611" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_tile_side_bar" x="576" y="64" w="64" h="256" xo="0" yo="0" id="10000034" name="inst_746EA6F2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_tile_top_bar" x="0" y="0" w="640" h="64" xo="0" yo="0" id="10000035" name="inst_3A8B3CE1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_tile_side" x="512" y="64" w="64" h="256" xo="0" yo="0" id="10000859" name="inst_6B29279A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_tile_side" x="64" y="64" w="64" h="256" xo="0" yo="256" id="10000860" name="inst_FDF5F96C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="128" y="64" w="64" h="256" xo="0" yo="0" id="10000861" name="inst_F0867610" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="192" y="64" w="64" h="256" xo="64" yo="0" id="10000862" name="inst_513687AF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="256" y="64" w="64" h="256" xo="128" yo="0" id="10000863" name="inst_10BA6D3A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="320" y="64" w="64" h="256" xo="192" yo="0" id="10000864" name="inst_2884C578" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="384" y="64" w="64" h="256" xo="256" yo="0" id="10000865" name="inst_68AC646F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="448" y="64" w="64" h="256" xo="320" yo="0" id="10000866" name="inst_BFC9E091" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

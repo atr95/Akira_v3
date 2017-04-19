@@ -8,7 +8,7 @@
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
-  <colour>16777215</colour>
+  <colour>0</colour>
   <showcolour>-1</showcolour>
   <code>//spawn objects we need
 scr_check_persist();
@@ -64,6 +64,24 @@ global.border=104;</code>
     <tile bgName="bg_tile_top_bar" x="0" y="0" w="640" h="64" xo="0" yo="0" id="10000035" name="inst_3A8B3CE1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_tile_top_bar" x="640" y="0" w="640" h="64" xo="0" yo="0" id="10000829" name="inst_B6408D0A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_tile_bottom_bar" x="640" y="320" w="640" h="40" xo="0" yo="0" id="10000830" name="inst_6CE3B258" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_tile_side" x="1152" y="64" w="64" h="256" xo="448" yo="0" id="10000881" name="inst_30ABC003" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_tile_side" x="64" y="64" w="64" h="256" xo="448" yo="256" id="10000882" name="inst_49BDA95E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="128" y="64" w="64" h="256" xo="0" yo="0" id="10000884" name="inst_2E65F7CD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="192" y="64" w="64" h="256" xo="64" yo="0" id="10000885" name="inst_AA8910B6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="256" y="64" w="64" h="256" xo="128" yo="0" id="10000886" name="inst_227E099F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="320" y="64" w="64" h="256" xo="192" yo="0" id="10000887" name="inst_8CCCD805" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="384" y="64" w="64" h="256" xo="256" yo="0" id="10000888" name="inst_3A6D0EF9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="448" y="64" w="64" h="256" xo="320" yo="0" id="10000889" name="inst_C3B80692" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="512" y="64" w="64" h="256" xo="384" yo="0" id="10000890" name="inst_5859EF8B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="576" y="64" w="64" h="256" xo="448" yo="0" id="10000891" name="inst_4A41FCD8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="640" y="64" w="64" h="256" xo="512" yo="0" id="10000892" name="inst_E6A93922" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="704" y="64" w="64" h="256" xo="576" yo="0" id="10000893" name="inst_A1ED27AE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="768" y="64" w="64" h="256" xo="640" yo="0" id="10000894" name="inst_727A98AA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="832" y="64" w="64" h="256" xo="704" yo="0" id="10000895" name="inst_97C9DA3A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="896" y="64" w="64" h="256" xo="768" yo="0" id="10000896" name="inst_4962E2D0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="960" y="64" w="64" h="256" xo="832" yo="0" id="10000897" name="inst_5018C670" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="1024" y="64" w="64" h="256" xo="896" yo="0" id="10000898" name="inst_D95FB528" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background7" x="1088" y="64" w="64" h="256" xo="960" yo="0" id="10000899" name="inst_97346F87" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

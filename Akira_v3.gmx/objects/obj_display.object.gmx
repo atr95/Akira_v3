@@ -42,6 +42,16 @@ display[10]="This door won't budge.";
 display[11]="I found a map to this area.";
 display[12]="I used a medkit.";
 display[13]="I unlocked the door.";
+display[14]="Use A and D to move left and right.";
+display[15]="You can use the space bar to interact with objects.";
+display[16]="You can pick up items by pressing the interact key.";
+display[17]="You can press shift to ready your weapon.";
+display[18]="Pressing the space bar will fire the weapon.";
+display[19]="When your weapon is drawn, you can not interact.";
+display[20]="Press shift when your weapon is readied to relax it.";
+display[21]="You can reload your weapon by pressing R."
+display[22]="You can press M to use a medkit.";
+display[23]="Congratulations. You found the end of this playtest.";
 </string>
           </argument>
         </arguments>
